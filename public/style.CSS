@@ -1,0 +1,147 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #000000;
+  color: #FFD700;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 40px;
+  background: #FFD700;
+  color: #000000;
+}
+main {
+  padding: 60px 20px;
+}
+section {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+.generator-box {
+  background: #111111;
+  padding: 20px;
+  border-radius: 4px;
+}
+.generator-box div {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+.generator-box button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background: #FFD700;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Positionne le header en relative pour que le logo puisse être positionné absolument */
+header {
+  position: relative;
+  padding: 20px; /* Ajuste l'espace autour selon tes besoins */
+  background: #FFD700; /* Garde ton fond doré */
+}
+
+/* Positionne le logo en haut à gauche */
+header img {
+  position: absolute;
+  top: 10px;   /* Décalage depuis le haut du header */
+  left: 10px;  /* Décalage depuis la gauche du header */
+  max-height: 100px; /* Hauteur maximale du logo */
+  width: auto;
+}
+
+header {
+  position: relative;
+  padding: 20px;
+  background: #FFD700;
+  color: #000;
+}
+
+.lang-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lang-switcher button {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+  padding: 6px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.lang-switcher button:hover {
+  background: #000;
+  color: #FFD700;
+}
+/* Language switcher buttons */
+.lang-switcher button {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+  padding: 6px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.lang-switcher button.active {
+  background: #000;
+  color: #FFD700;
+}
+/* Boxes ombrées pour chaque section de générateur */
+main > .lang-fr section,
+main > .lang-en section {
+  background: #111111;            /* Fond sombre */
+  border-radius: 8px;            /* Bords arrondis */
+  padding: 20px;                 /* Intérieur de la box */
+  margin: 20px auto;             /* Espacement vertical et centrage */
+  max-width: 600px;              /* Largeur fixe */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);  /* Ombre portée */
+}
+
+/* Si tu veux cibler uniquement la .generator-box à l’intérieur */
+.generator-box {
+  background: inherit;           /* Hérite du fond de la section */
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+/* Box IA similaire aux générateurs */
+.ai-box {
+  background: #111111;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  color: #FFD700;
+}
+.ai-box h2, .ai-box h3 {
+  color: #FFD700;
+}
+.ai-box textarea {
+  background: #000;
+  color: #FFD700;
+  border: 1px solid #333;
+}
+.ai-box button {
+  background: #FFD700;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ai-box button:hover {
+  opacity: 0.9;
+}
+
