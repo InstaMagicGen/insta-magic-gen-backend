@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InstaMagicGen</title>
+  <link rel="stylesheet" href="style.css"/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5817303925241698"
+     crossorigin="anonymous">
+    </script>
+</head>
+<body>
+  <header>
+    <img src="logoinstagen.png" alt="Logo InstaMagicGen" class="logo"/>
+    <div class="lang-switcher">
+      <button id="btn-fr">FR</button>
+      <button id="btn-en">EN</button>
+    </div>
+    <h1>InstaMagicGen</h1>
+    <p>Générateur de pseudos, bios et citations stylées</p>
+  </header>
+
+  <main>
+    <!-- Section Analyse IA -->
+      <section id="analyse-ia" class="ai-box">
+        <h2>Analyse ton texte avec l’IA</h2>
+        <h3>Colle un texte et découvre insights, ton et résumé</h3>
+        <textarea id="ia-input" rows="5" placeholder="Colle ton texte ici…" style="width:100%; border-radius:4px; padding:10px;"></textarea>
+        <button id="ia-btn" style="margin-top:10px;">Lancer l’analyse</button>
+        <div id="ia-result" style="margin-top:20px; white-space:pre-wrap;">…</div>
+      </section>
+
+    <!-- Français -->
+    <div class="lang-fr">
+      <section>
+        <h2>Ton pseudo en un éclair</h2>
+        <h3>Un nom unique, stylé et prêt à briller sur les réseaux</h3>
+        <div class="generator-box">
+          <div id="pseudo-result-fr">…</div>
+          <button id="pseudo-btn-fr">Générer un pseudo</button>
+        </div>
+      </section>
+      <section>
+        <h2>Ta bio Instagram parfaite</h2>
+        <h3>Une phrase courte qui reflète ta personnalité</h3>
+        <div class="generator-box">
+          <div id="bio-result-fr">…</div>
+          <button id="bio-btn-fr">Générer une bio</button>
+        </div>
+      </section>
+      <section>
+        <h2>Ta citation inspirante</h2>
+        <h3>Le mot juste pour marquer les esprits</h3>
+        <div class="generator-box">
+          <div id="citation-result-fr">…</div>
+          <button id="citation-btn-fr">Générer une citation</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- English -->
+    <div class="lang-en" style="display:none;">
+      <section>
+        <h2>Your username in a flash</h2>
+        <h3>A unique, stylish name ready to shine on social media</h3>
+        <div class="generator-box">
+          <div id="pseudo-result-en">…</div>
+          <button id="pseudo-btn-en">Generate username</button>
+        </div>
+      </section>
+      <section>
+        <h2>Your perfect Instagram bio</h2>
+        <h3>A short phrase that reflects who you are</h3>
+        <div class="generator-box">
+          <div id="bio-result-en">…</div>
+          <button id="bio-btn-en">Generate bio</button>
+        </div>
+      </section>
+      <section>
+        <h2>Your inspiring quote</h2>
+        <h3>The right words to leave an impression</h3>
+        <div class="generator-box">
+          <div id="citation-result-en">…</div>
+          <button id="citation-btn-en">Generate quote</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Switcher de langue
+    document.getElementById('btn-fr').addEventListener('click', () => {
+      document.querySelector('.lang-fr').style.display = 'block';
+      document.querySelector('.lang-en').style.display = 'none';
+    });
+    document.getElementById('btn-en').addEventListener('click', () => {
+      document.querySelector('.lang-fr').style.display = 'none';
+      document.querySelector('.lang-en').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
