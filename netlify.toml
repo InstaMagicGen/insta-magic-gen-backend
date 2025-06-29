@@ -1,4 +1,4 @@
 
 [build]
   functions = "netlify/functions"
-  publish   = "."        # <-- Publie la racine du repo
+  publish   = "public"        # <-- Publie la racine du repo
